@@ -75,7 +75,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 		solo.enterText(masterPwdInput, MASTER_PWD);
 		solo.enterText(websiteInput, WEBSITE_NAME);
 		
-		solo.clickOnButton("Gerar senha!");
+		solo.clickOnButton("Generate!");
 		assertTrue(StringUtils.isAlphanumeric(generatedPwd.getText().toString()));		
 		assertEquals("6e0f3a7cc3c55f566887556816a3d844", generatedPwd.getText().toString());
 	}
@@ -87,7 +87,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 		solo.enterText(masterPwdInput, MASTER_PWD);
 		solo.enterText(websiteInput, WEBSITE_NAME);
 		
-		solo.clickOnButton("Gerar senha!");
+		solo.clickOnButton("Generate!");
 		assertTrue(StringUtils.isNumeric(generatedPwd.getText().toString()));
 		assertEquals("61023779939552566887556816730844", generatedPwd.getText().toString());
 	}
@@ -99,7 +99,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 		solo.enterText(masterPwdInput, MASTER_PWD);
 		solo.enterText(websiteInput, WEBSITE_NAME);
 		
-		solo.clickOnButton("Gerar senha!");
+		solo.clickOnButton("Generate!");
 		assertEquals("P#!6e0f3a7cc3c55f566887556816a3d844", generatedPwd.getText().toString());
 	}
 	
@@ -111,7 +111,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 		solo.enterText(websiteInput, WEBSITE_NAME);
 		solo.enterText(limitSizeInput, "8");
 		
-		solo.clickOnButton("Gerar senha!");
+		solo.clickOnButton("Generate!");
 		assertEquals(8, generatedPwd.getText().length());
 		assertEquals("6e0f3a7c", generatedPwd.getText().toString());		
 	}

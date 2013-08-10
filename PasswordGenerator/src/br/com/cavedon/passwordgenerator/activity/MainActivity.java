@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 	
 	Boolean isNumbersOnly;
 	Boolean isSpecialChars;
-	Integer maxSize = -1;
+	Integer maxSize;
 	
 	@ViewById
 	EditText master_pwd_input;
@@ -115,6 +115,8 @@ public class MainActivity extends Activity {
 		
 		if (!StringUtils.isEmpty(limit_size_input.getText())) {
 			maxSize = Integer.valueOf(limit_size_input.getText().toString());	
+		} else {
+			maxSize = -1;
 		}
 		
 		CharSequence webSite = website_input.getText(); 			
@@ -130,7 +132,8 @@ public class MainActivity extends Activity {
 			generated_pwd_text.setText(pwd);
 			
 		} catch (Exception e) {
-			Toast.makeText(getApplicationContext(), "Erro! Tente novamente mais tarde", Toast.LENGTH_SHORT).show();
+			e.printStackTrace();
+			Toast.makeText(getApplicationContext(), getString(R.string.generate_pwd_error), Toast.LENGTH_SHORT).show();
 		}
 	}
 }

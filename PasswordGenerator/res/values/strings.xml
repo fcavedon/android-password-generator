@@ -3,11 +3,12 @@
 
     <string name="app_name">Password Generator</string>
     <string name="action_settings">Settings</string>
-    <string name="master_pwd_input">Digite sua senha de segurança:</string>
-	<string name="website_input">Digite o endereço do site:</string>    
-	<string name="number_only_check">Somente números?</string>
-	<string name="special_chars_check">Maiúsculas e caracteres especiais?</string>
-	<string name="limit_pwd_size">Tamanho máximo:</string>	
-	<string name="generate_pwd_btn">Gerar senha!</string>
+    <string name="master_pwd_input">Your master password:</string>
+	<string name="website_input">Website:</string>    
+	<string name="number_only_check">Numbers only?</string>
+	<string name="special_chars_check">Uppercase and special chars?</string>
+	<string name="limit_pwd_size">Max size:</string>	
+	<string name="generate_pwd_btn">Generate!</string>
+	<string name="generate_pwd_error">An error occurred, could not generate password.</string>
 
 </resources>
